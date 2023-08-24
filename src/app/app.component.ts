@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   images = ['japan(1).jpg','japan(2).jpg','japan(3).jpg','japan(4).jpg']
+  headlines = [
+    'Experience the Enchanting Ambiance of Japan',
+    'Japans Rich Cultural Tapestry',
+    'Exploring the Multifaceted Wonders of Japan',
+    'Embracing the Beauty and Tranquility of Japan']
+    
   currentImage = 0;
   showImage = true;
   ngOnInit() {
