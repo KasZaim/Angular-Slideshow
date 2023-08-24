@@ -1,0 +1,22 @@
+.slideshow-container{
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+}
+
+.img-slideshow{
+    max-width: 100%;
+    object-fit: cover;
+    animation: zoomIN 8s ease-in infinite;
+    height: 100vh;
+    width: 100vw;
+}
+
+@keyframes zoomIN{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
