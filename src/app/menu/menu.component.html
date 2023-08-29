@@ -1,0 +1,12 @@
+<header [class.headerDark]="darkMode">
+    <img *ngIf="!darkMode" routerLink="/" src="assets/img/blossom-white.png" alt="">
+    <img *ngIf="darkMode" routerLink="/" src="assets/img/blossom-black.png" alt="">
+    
+    <div [class.darkLinks]="darkMode">
+        <a routerLink="/">Home</a>
+        <a href="">Sightseeing</a>
+        <a href="">Art and Entertainment</a>
+        <a href="">Travel Tips</a>
+        <a routerLink="/about">Imprint</a>
+    </div>
+</header>

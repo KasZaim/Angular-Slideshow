@@ -1,57 +1,6 @@
-.slideshow-container{
-height: 100vh;
-width: 100vw;
-overflow: hidden;
-max-width: 100%;
-}
+.container{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 120px;
 
-.img-slideshow{
-    max-width: 100%;
-    object-fit: cover;
-    animation: zoomIN 8s ease-in;
-    height: 100vh;
-    width: 100vw;
-}
-
-@keyframes zoomIN{
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.2);
-    }
-}
-
-.slideshow-overlay{
-    position: absolute;
-    background-color: rgba($color: #000000, $alpha: 0.4);
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    p {
-        max-width: 600px;
-        color: white;
-        font-size: 80px;
-        letter-spacing: 2px;
-        border-left: 8px solid #ffb7c5;
-        margin-left: 100px;
-        padding-left: 32px;
-    }
-}
-
-.fadeIn{
-    animation: fadeInAnimation 1.5s ease-in-out;
-}
-
-@keyframes fadeInAnimation{
-    from{
-        opacity: 0;
-        transform: translateY(20px)
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0)
-    }
 }

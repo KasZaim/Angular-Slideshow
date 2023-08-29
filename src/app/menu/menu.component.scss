@@ -1,0 +1,77 @@
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    img {
+        height: 60px;
+        cursor: pointer;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin-inline-end: 32px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 7px;
+        border-radius: 10px;
+        transition: all 250ms ease-in-out;
+        position: relative;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: #ffb7c5;
+
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.darkLinks {
+    a {
+        color: black;
+
+        &:before {
+            background-color: black; /* Change the border color to black */
+        }
+    }
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.8);
+
+        a:before {
+            background-color: rgba(0, 0, 0, 0.8); /* Change the border color on hover */
+        }
+    }
+}
+
+.headerDark{
+    background-color: white;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
